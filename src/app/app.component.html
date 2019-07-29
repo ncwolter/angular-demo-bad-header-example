@@ -1,0 +1,8 @@
+<div *ngIf="showReq$ | async">
+    {{ resOne$ | async | json}}
+    <br>
+    {{ resTwo$ | async | json}}
+    <br>
+    {{ resThree$ | async | json}}
+</div>
+<button (click)="callApis()">call apis</button>
